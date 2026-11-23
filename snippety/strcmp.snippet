@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>Porownaj teksty bez wielkosci liter</Title>
+      <Shortcut>strcmp</Shortcut>
+      <Description>Equals z OrdinalIgnoreCase</Description>
+      <Author>INF.04</Author>
+      <SnippetTypes><SnippetType>Expansion</SnippetType></SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal>
+          <ID>nazwa</ID>
+          <ToolTip>nazwa</ToolTip>
+          <Default>TakieSame</Default>
+        </Literal>
+      </Declarations>
+      <Code Language="CSharp" Kind="method decl" Delimiter="$"><![CDATA[public static bool $nazwa$(string a, string b)
+{
+    return a.Equals(b, StringComparison.OrdinalIgnoreCase);
+}]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

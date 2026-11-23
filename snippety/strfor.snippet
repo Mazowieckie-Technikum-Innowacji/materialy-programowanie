@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>Petla po znakach tekstu</Title>
+      <Shortcut>strfor</Shortcut>
+      <Description>foreach po kolejnych znakach tekstu</Description>
+      <Author>INF.04</Author>
+      <SnippetTypes><SnippetType>Expansion</SnippetType></SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal>
+          <ID>tekst</ID>
+          <ToolTip>tekst</ToolTip>
+          <Default>tekst</Default>
+        </Literal>
+      </Declarations>
+      <Code Language="CSharp" Kind="method body" Delimiter="$"><![CDATA[foreach (char c in $tekst$)
+{
+    $end$
+}]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

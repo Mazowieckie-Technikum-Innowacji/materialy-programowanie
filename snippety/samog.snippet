@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>Zlicz samogloski</Title>
+      <Shortcut>samog</Shortcut>
+      <Description>Liczenie samoglosek (polskie znaki)</Description>
+      <Author>INF.04</Author>
+      <SnippetTypes><SnippetType>Expansion</SnippetType></SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal>
+          <ID>nazwa</ID>
+          <ToolTip>nazwa</ToolTip>
+          <Default>LiczSamogloski</Default>
+        </Literal>
+      </Declarations>
+      <Code Language="CSharp" Kind="method decl" Delimiter="$"><![CDATA[public static int $nazwa$(string tekst)
+{
+    const string samogloski = "aąeęioóuyAĄEĘIOÓUY";
+    int licznik = 0;
+    foreach (char c in tekst)
+    {
+        if (samogloski.Contains(c)) licznik++;
+    }
+    return licznik;
+}]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

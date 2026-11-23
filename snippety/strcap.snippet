@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>Wielkie pierwsze litery slow</Title>
+      <Shortcut>strcap</Shortcut>
+      <Description>Pierwsza litera kazdego slowa wielka, reszta mala</Description>
+      <Author>INF.04</Author>
+      <SnippetTypes><SnippetType>Expansion</SnippetType></SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal>
+          <ID>nazwa</ID>
+          <ToolTip>nazwa</ToolTip>
+          <Default>WielkiePierwszeLitery</Default>
+        </Literal>
+      </Declarations>
+      <Code Language="CSharp" Kind="method decl" Delimiter="$"><![CDATA[public static string $nazwa$(string tekst)
+{
+    string[] slowa = tekst.Split(' ');
+    for (int i = 0; i < slowa.Length; i++)
+    {
+        if (slowa[i].Length > 0)
+        {
+            slowa[i] = char.ToUpper(slowa[i][0]) + slowa[i].Substring(1).ToLower();
+        }
+    }
+    return string.Join(" ", slowa);
+}]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

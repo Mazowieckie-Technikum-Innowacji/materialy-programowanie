@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>Zlicz wystapienia znaku</Title>
+      <Shortcut>strcnt</Shortcut>
+      <Description>Ile razy dany znak wystepuje w tekscie</Description>
+      <Author>INF.04</Author>
+      <SnippetTypes><SnippetType>Expansion</SnippetType></SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal>
+          <ID>nazwa</ID>
+          <ToolTip>nazwa</ToolTip>
+          <Default>ZliczZnak</Default>
+        </Literal>
+      </Declarations>
+      <Code Language="CSharp" Kind="method decl" Delimiter="$"><![CDATA[public static int $nazwa$(string tekst, char znak)
+{
+    int licznik = 0;
+    foreach (char c in tekst)
+    {
+        if (c == znak) licznik++;
+    }
+    return licznik;
+}]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

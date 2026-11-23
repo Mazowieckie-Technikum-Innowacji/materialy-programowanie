@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>Fibonacci</Title>
+      <Shortcut>fib</Shortcut>
+      <Description>n-ty wyraz ciagu Fibonacciego (petla)</Description>
+      <Author>INF.04</Author>
+      <SnippetTypes><SnippetType>Expansion</SnippetType></SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal>
+          <ID>nazwa</ID>
+          <ToolTip>nazwa</ToolTip>
+          <Default>Fibonacci</Default>
+        </Literal>
+      </Declarations>
+      <Code Language="CSharp" Kind="method decl" Delimiter="$"><![CDATA[public static long $nazwa$(int n)
+{
+    long a = 0, b = 1;
+    for (int i = 0; i < n; i++)
+    {
+        long tmp = a + b;
+        a = b;
+        b = tmp;
+    }
+    return a;
+}]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

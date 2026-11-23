@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>Odwroc tekst</Title>
+      <Shortcut>strrev</Shortcut>
+      <Description>Odwrocenie tekstu (ToCharArray, Array.Reverse)</Description>
+      <Author>INF.04</Author>
+      <SnippetTypes><SnippetType>Expansion</SnippetType></SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal>
+          <ID>nazwa</ID>
+          <ToolTip>nazwa</ToolTip>
+          <Default>Odwroc</Default>
+        </Literal>
+      </Declarations>
+      <Code Language="CSharp" Kind="method decl" Delimiter="$"><![CDATA[public static string $nazwa$(string tekst)
+{
+    char[] znaki = tekst.ToCharArray();
+    Array.Reverse(znaki);
+    return new string(znaki);
+}]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

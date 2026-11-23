@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>Wczytaj liczbe rzeczywista</Title>
+      <Shortcut>rddbl</Shortcut>
+      <Description>Akceptuje kropke i przecinek</Description>
+      <Author>INF.04</Author>
+      <SnippetTypes><SnippetType>Expansion</SnippetType></SnippetTypes>
+    </Header>
+    <Snippet>
+      <Imports>
+        <Import><Namespace>System.Globalization</Namespace></Import>
+      </Imports>
+      <Declarations>
+        <Literal>
+          <ID>komunikat</ID>
+          <ToolTip>komunikat</ToolTip>
+          <Default>Podaj liczbę</Default>
+        </Literal>
+        <Literal>
+          <ID>x</ID>
+          <ToolTip>x</ToolTip>
+          <Default>x</Default>
+        </Literal>
+      </Declarations>
+      <Code Language="CSharp" Kind="method body" Delimiter="$"><![CDATA[Console.Write("$komunikat$: ");
+double $x$ = double.Parse(Console.ReadLine().Replace(',', '.'), CultureInfo.InvariantCulture);]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

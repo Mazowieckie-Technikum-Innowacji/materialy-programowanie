@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>Klasa statyczna z metoda</Title>
+      <Shortcut>klstat</Shortcut>
+      <Description>Klasa narzedziowa</Description>
+      <Author>INF.04</Author>
+      <SnippetTypes><SnippetType>Expansion</SnippetType></SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal>
+          <ID>Narzedzia</ID>
+          <ToolTip>Narzedzia</ToolTip>
+          <Default>Narzedzia</Default>
+        </Literal>
+        <Literal>
+          <ID>typ</ID>
+          <ToolTip>typ</ToolTip>
+          <Default>int</Default>
+        </Literal>
+        <Literal>
+          <ID>Metoda</ID>
+          <ToolTip>Metoda</ToolTip>
+          <Default>Oblicz</Default>
+        </Literal>
+        <Literal>
+          <ID>typparam</ID>
+          <ToolTip>typparam</ToolTip>
+          <Default>int</Default>
+        </Literal>
+        <Literal>
+          <ID>param</ID>
+          <ToolTip>param</ToolTip>
+          <Default>parametr</Default>
+        </Literal>
+        <Literal>
+          <ID>wynik</ID>
+          <ToolTip>wynik</ToolTip>
+          <Default>0</Default>
+        </Literal>
+      </Declarations>
+      <Code Language="CSharp" Kind="type decl" Delimiter="$"><![CDATA[public static class $Narzedzia$
+{
+    public static $typ$ $Metoda$($typparam$ $param$)
+    {
+        $end$
+        return $wynik$;
+    }
+}]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

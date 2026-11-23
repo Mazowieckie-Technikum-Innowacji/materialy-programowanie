@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>Suma i srednia tablicy</Title>
+      <Shortcut>tabs</Shortcut>
+      <Description>Suma (long) i srednia (double)</Description>
+      <Author>INF.04</Author>
+      <SnippetTypes><SnippetType>Expansion</SnippetType></SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal>
+          <ID>t</ID>
+          <ToolTip>t</ToolTip>
+          <Default>tab</Default>
+        </Literal>
+        <Literal>
+          <ID>suma</ID>
+          <ToolTip>suma</ToolTip>
+          <Default>suma</Default>
+        </Literal>
+        <Literal>
+          <ID>srednia</ID>
+          <ToolTip>srednia</ToolTip>
+          <Default>srednia</Default>
+        </Literal>
+      </Declarations>
+      <Code Language="CSharp" Kind="method body" Delimiter="$"><![CDATA[long $suma$ = 0;
+for (int i = 0; i < $t$.Length; i++)
+{
+    $suma$ += $t$[i];
+}
+double $srednia$ = (double)$suma$ / $t$.Length;
+Console.WriteLine($$"Suma: {$suma$}, średnia: {$srednia$:0.00}");]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

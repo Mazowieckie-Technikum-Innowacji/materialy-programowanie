@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>Metoda zwracajaca wartosc</Title>
+      <Shortcut>metr</Shortcut>
+      <Description>Statyczna metoda z return</Description>
+      <Author>INF.04</Author>
+      <SnippetTypes><SnippetType>Expansion</SnippetType></SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal>
+          <ID>typ</ID>
+          <ToolTip>typ</ToolTip>
+          <Default>int</Default>
+        </Literal>
+        <Literal>
+          <ID>nazwa</ID>
+          <ToolTip>nazwa</ToolTip>
+          <Default>NazwaMetody</Default>
+        </Literal>
+        <Literal>
+          <ID>typparam</ID>
+          <ToolTip>typparam</ToolTip>
+          <Default>int</Default>
+        </Literal>
+        <Literal>
+          <ID>param</ID>
+          <ToolTip>param</ToolTip>
+          <Default>parametr</Default>
+        </Literal>
+        <Literal>
+          <ID>wynik</ID>
+          <ToolTip>wynik</ToolTip>
+          <Default>0</Default>
+        </Literal>
+      </Declarations>
+      <Code Language="CSharp" Kind="method decl" Delimiter="$"><![CDATA[public static $typ$ $nazwa$($typparam$ $param$)
+{
+    $end$
+    return $wynik$;
+}]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

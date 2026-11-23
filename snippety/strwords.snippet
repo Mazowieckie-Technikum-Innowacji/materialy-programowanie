@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>Slowa w tekscie</Title>
+      <Shortcut>strwords</Shortcut>
+      <Description>Podzial na slowa (Split) i ich liczba</Description>
+      <Author>INF.04</Author>
+      <SnippetTypes><SnippetType>Expansion</SnippetType></SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal>
+          <ID>tekst</ID>
+          <ToolTip>tekst</ToolTip>
+          <Default>tekst</Default>
+        </Literal>
+      </Declarations>
+      <Code Language="CSharp" Kind="method body" Delimiter="$"><![CDATA[string[] slowa = $tekst$.Split(' ', StringSplitOptions.RemoveEmptyEntries);
+Console.WriteLine($$"Liczba slow: {slowa.Length}");
+foreach (string slowo in slowa)
+{
+    Console.WriteLine(slowo);
+}]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

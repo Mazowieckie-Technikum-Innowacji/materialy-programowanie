@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>Zapisz linie do pliku</Title>
+      <Shortcut>filew</Shortcut>
+      <Description>File.WriteAllLines</Description>
+      <Author>INF.04</Author>
+      <SnippetTypes><SnippetType>Expansion</SnippetType></SnippetTypes>
+    </Header>
+    <Snippet>
+      <Imports>
+        <Import><Namespace>System.IO</Namespace></Import>
+      </Imports>
+      <Declarations>
+        <Literal>
+          <ID>plik</ID>
+          <ToolTip>plik</ToolTip>
+          <Default>wynik.txt</Default>
+        </Literal>
+        <Literal>
+          <ID>linie</ID>
+          <ToolTip>linie</ToolTip>
+          <Default>linie</Default>
+        </Literal>
+      </Declarations>
+      <Code Language="CSharp" Kind="method body" Delimiter="$"><![CDATA[File.WriteAllLines("$plik$", $linie$);]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

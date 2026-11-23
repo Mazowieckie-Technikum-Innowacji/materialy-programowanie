@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>Podziel i polacz tekst</Title>
+      <Shortcut>strjoin</Shortcut>
+      <Description>Split po separatorze i string.Join</Description>
+      <Author>INF.04</Author>
+      <SnippetTypes><SnippetType>Expansion</SnippetType></SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal>
+          <ID>tekst</ID>
+          <ToolTip>tekst</ToolTip>
+          <Default>tekst</Default>
+        </Literal>
+        <Literal>
+          <ID>rozdzielacz</ID>
+          <ToolTip>rozdzielacz</ToolTip>
+          <Default>' '</Default>
+        </Literal>
+        <Literal>
+          <ID>laczenie</ID>
+          <ToolTip>laczenie</ToolTip>
+          <Default>", "</Default>
+        </Literal>
+      </Declarations>
+      <Code Language="CSharp" Kind="method body" Delimiter="$"><![CDATA[string[] czesci = $tekst$.Split($rozdzielacz$);
+string razem = string.Join($laczenie$, czesci);
+Console.WriteLine(razem);]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

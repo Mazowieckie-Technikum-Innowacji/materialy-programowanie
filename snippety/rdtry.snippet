@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>Wczytaj liczbe z walidacja</Title>
+      <Shortcut>rdtry</Shortcut>
+      <Description>TryParse w petli az do poprawnej liczby</Description>
+      <Author>INF.04</Author>
+      <SnippetTypes><SnippetType>Expansion</SnippetType></SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal>
+          <ID>komunikat</ID>
+          <ToolTip>komunikat</ToolTip>
+          <Default>Podaj liczbę</Default>
+        </Literal>
+        <Literal>
+          <ID>n</ID>
+          <ToolTip>n</ToolTip>
+          <Default>n</Default>
+        </Literal>
+      </Declarations>
+      <Code Language="CSharp" Kind="method body" Delimiter="$"><![CDATA[int $n$;
+Console.Write("$komunikat$: ");
+while (!int.TryParse(Console.ReadLine(), out $n$))
+{
+    Console.Write("Niepoprawna liczba, spróbuj ponownie: ");
+}]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

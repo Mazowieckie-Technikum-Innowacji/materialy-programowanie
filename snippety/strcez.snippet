@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>Szyfr Cezara</Title>
+      <Shortcut>strcez</Shortcut>
+      <Description>Przesuniecie liter a-z i A-Z o k pozycji</Description>
+      <Author>INF.04</Author>
+      <SnippetTypes><SnippetType>Expansion</SnippetType></SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal>
+          <ID>nazwa</ID>
+          <ToolTip>nazwa</ToolTip>
+          <Default>SzyfrCezara</Default>
+        </Literal>
+      </Declarations>
+      <Code Language="CSharp" Kind="method decl" Delimiter="$"><![CDATA[public static string $nazwa$(string tekst, int k)
+{
+    char[] wynik = tekst.ToCharArray();
+    for (int i = 0; i < wynik.Length; i++)
+    {
+        char c = wynik[i];
+        if (c >= 'a' && c <= 'z')
+        {
+            wynik[i] = (char)('a' + ((c - 'a' + k) % 26 + 26) % 26);
+        }
+        else if (c >= 'A' && c <= 'Z')
+        {
+            wynik[i] = (char)('A' + ((c - 'A' + k) % 26 + 26) % 26);
+        }
+    }
+    return new string(wynik);
+}]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

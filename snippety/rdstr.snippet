@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>Wczytaj tekst</Title>
+      <Shortcut>rdstr</Shortcut>
+      <Description>Console.ReadLine() do zmiennej string</Description>
+      <Author>INF.04</Author>
+      <SnippetTypes><SnippetType>Expansion</SnippetType></SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal>
+          <ID>komunikat</ID>
+          <ToolTip>komunikat</ToolTip>
+          <Default>Podaj tekst</Default>
+        </Literal>
+        <Literal>
+          <ID>tekst</ID>
+          <ToolTip>tekst</ToolTip>
+          <Default>tekst</Default>
+        </Literal>
+      </Declarations>
+      <Code Language="CSharp" Kind="method body" Delimiter="$"><![CDATA[Console.Write("$komunikat$: ");
+string $tekst$ = Console.ReadLine();]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

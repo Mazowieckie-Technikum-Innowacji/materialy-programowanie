@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>Klasa z konstruktorami</Title>
+      <Shortcut>klasa</Shortcut>
+      <Description>Pole, konstruktor domyslny, z parametrem i ToString</Description>
+      <Author>INF.04</Author>
+      <SnippetTypes><SnippetType>Expansion</SnippetType></SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal>
+          <ID>Klasa</ID>
+          <ToolTip>Klasa</ToolTip>
+          <Default>Klasa</Default>
+        </Literal>
+        <Literal>
+          <ID>typ</ID>
+          <ToolTip>typ</ToolTip>
+          <Default>int</Default>
+        </Literal>
+        <Literal>
+          <ID>pole</ID>
+          <ToolTip>pole</ToolTip>
+          <Default>pole</Default>
+        </Literal>
+        <Literal>
+          <ID>domyslna</ID>
+          <ToolTip>domyslna</ToolTip>
+          <Default>0</Default>
+        </Literal>
+      </Declarations>
+      <Code Language="CSharp" Kind="type decl" Delimiter="$"><![CDATA[public class $Klasa$
+{
+    private $typ$ $pole$;
+
+    public $Klasa$()
+    {
+        $pole$ = $domyslna$;
+    }
+
+    public $Klasa$($typ$ $pole$)
+    {
+        this.$pole$ = $pole$;
+    }
+
+    public override string ToString()
+    {
+        return $$"{$pole$}";
+    }
+}]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

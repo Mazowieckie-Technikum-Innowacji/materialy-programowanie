@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>Silnia</Title>
+      <Shortcut>silnia</Shortcut>
+      <Description>Silnia w petli (long)</Description>
+      <Author>INF.04</Author>
+      <SnippetTypes><SnippetType>Expansion</SnippetType></SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal>
+          <ID>nazwa</ID>
+          <ToolTip>nazwa</ToolTip>
+          <Default>Silnia</Default>
+        </Literal>
+      </Declarations>
+      <Code Language="CSharp" Kind="method decl" Delimiter="$"><![CDATA[public static long $nazwa$(int n)
+{
+    long wynik = 1;
+    for (int i = 2; i <= n; i++)
+    {
+        wynik *= i;
+    }
+    return wynik;
+}]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

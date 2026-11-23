@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>Tablica wypelniona losowo</Title>
+      <Shortcut>tabl</Shortcut>
+      <Description>Tablica int[] z liczbami losowymi</Description>
+      <Author>INF.04</Author>
+      <SnippetTypes><SnippetType>Expansion</SnippetType></SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal>
+          <ID>t</ID>
+          <ToolTip>t</ToolTip>
+          <Default>tab</Default>
+        </Literal>
+        <Literal>
+          <ID>n</ID>
+          <ToolTip>n</ToolTip>
+          <Default>10</Default>
+        </Literal>
+        <Literal>
+          <ID>rnd</ID>
+          <ToolTip>rnd</ToolTip>
+          <Default>rnd</Default>
+        </Literal>
+        <Literal>
+          <ID>min</ID>
+          <ToolTip>min</ToolTip>
+          <Default>1</Default>
+        </Literal>
+        <Literal>
+          <ID>max</ID>
+          <ToolTip>max</ToolTip>
+          <Default>1000</Default>
+        </Literal>
+      </Declarations>
+      <Code Language="CSharp" Kind="method body" Delimiter="$"><![CDATA[int[] $t$ = new int[$n$];
+Random $rnd$ = new Random();
+for (int i = 0; i < $t$.Length; i++)
+{
+    $t$[i] = $rnd$.Next($min$, $max$ + 1);
+}]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

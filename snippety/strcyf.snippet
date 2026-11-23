@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>Suma cyfr w tekscie</Title>
+      <Shortcut>strcyf</Shortcut>
+      <Description>Suma cyfr wystepujacych w tekscie (c - 0)</Description>
+      <Author>INF.04</Author>
+      <SnippetTypes><SnippetType>Expansion</SnippetType></SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal>
+          <ID>nazwa</ID>
+          <ToolTip>nazwa</ToolTip>
+          <Default>SumaCyfr</Default>
+        </Literal>
+      </Declarations>
+      <Code Language="CSharp" Kind="method decl" Delimiter="$"><![CDATA[public static int $nazwa$(string tekst)
+{
+    int suma = 0;
+    foreach (char c in tekst)
+    {
+        if (char.IsDigit(c)) suma += c - '0';
+    }
+    return suma;
+}]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

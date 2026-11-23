@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>Sortowanie babelkowe</Title>
+      <Shortcut>sortb</Shortcut>
+      <Description>Metoda sortujaca tablice int[]</Description>
+      <Author>INF.04</Author>
+      <SnippetTypes><SnippetType>Expansion</SnippetType></SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal>
+          <ID>nazwa</ID>
+          <ToolTip>nazwa</ToolTip>
+          <Default>SortujBabelkowo</Default>
+        </Literal>
+        <Literal>
+          <ID>t</ID>
+          <ToolTip>t</ToolTip>
+          <Default>tab</Default>
+        </Literal>
+      </Declarations>
+      <Code Language="CSharp" Kind="method decl" Delimiter="$"><![CDATA[public static void $nazwa$(int[] $t$)
+{
+    for (int i = 0; i < $t$.Length - 1; i++)
+    {
+        for (int j = 0; j < $t$.Length - 1 - i; j++)
+        {
+            if ($t$[j] > $t$[j + 1])
+            {
+                int tmp = $t$[j];
+                $t$[j] = $t$[j + 1];
+                $t$[j + 1] = tmp;
+            }
+        }
+    }
+}]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

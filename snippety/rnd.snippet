@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>Losowa liczba</Title>
+      <Shortcut>rnd</Shortcut>
+      <Description>Random.Next w zakresie min-max (wlacznie)</Description>
+      <Author>INF.04</Author>
+      <SnippetTypes><SnippetType>Expansion</SnippetType></SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal>
+          <ID>rnd</ID>
+          <ToolTip>rnd</ToolTip>
+          <Default>rnd</Default>
+        </Literal>
+        <Literal>
+          <ID>x</ID>
+          <ToolTip>x</ToolTip>
+          <Default>liczba</Default>
+        </Literal>
+        <Literal>
+          <ID>min</ID>
+          <ToolTip>min</ToolTip>
+          <Default>1</Default>
+        </Literal>
+        <Literal>
+          <ID>max</ID>
+          <ToolTip>max</ToolTip>
+          <Default>100</Default>
+        </Literal>
+      </Declarations>
+      <Code Language="CSharp" Kind="method body" Delimiter="$"><![CDATA[Random $rnd$ = new Random();
+int $x$ = $rnd$.Next($min$, $max$ + 1);]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

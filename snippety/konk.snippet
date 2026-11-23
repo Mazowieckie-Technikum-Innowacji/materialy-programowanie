@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>Konstruktor kopiujacy</Title>
+      <Shortcut>konk</Shortcut>
+      <Description>Konstruktor tworzacy kopie obiektu</Description>
+      <Author>INF.04</Author>
+      <SnippetTypes><SnippetType>Expansion</SnippetType></SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal>
+          <ID>Klasa</ID>
+          <ToolTip>Klasa</ToolTip>
+          <Default>Klasa</Default>
+        </Literal>
+        <Literal>
+          <ID>inny</ID>
+          <ToolTip>inny</ToolTip>
+          <Default>inny</Default>
+        </Literal>
+        <Literal>
+          <ID>pole</ID>
+          <ToolTip>pole</ToolTip>
+          <Default>pole</Default>
+        </Literal>
+      </Declarations>
+      <Code Language="CSharp" Kind="method decl" Delimiter="$"><![CDATA[public $Klasa$($Klasa$ $inny$)
+{
+    $pole$ = $inny$.$pole$;
+    $end$
+}]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>
