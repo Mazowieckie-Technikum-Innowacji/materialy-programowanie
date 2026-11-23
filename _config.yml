@@ -1,0 +1,7 @@
+# Konfiguracja strony GitHub Pages dla repozytorium materialy-programowanie.
+# Plik trafia do głównego katalogu repozytorium.
+theme: jekyll-theme-cayman
+title: Materiały do nauki programowania
+description: Ściągi, instrukcje i snippety do C# i Gita. Mazowieckie Technikum Innowacji w Płocku.
+lang: pl
+show_downloads: false
