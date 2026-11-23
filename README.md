@@ -10,6 +10,7 @@ Przygotowane w Mazowieckim Technikum Innowacji z myślą o aplikacjach konsolowy
 | [csharp-sciaga-string.md](csharp-sciaga-string.md) | metody `string` i `char` w C#: szukanie, wycinanie, dzielenie, wczytywanie i formatowanie |
 | [slowniczek.md](slowniczek.md) | słowniczek pojęć z programowania w C#: klasy i obiekty, pętle, tablice, wyjątki, narzędzia, Git (z przykładami kodu) |
 | [inf04-lista-kontrolna.md](inf04-lista-kontrolna.md) | lista kontrolna do części praktycznej INF.04: foldery, aplikacja konsolowa i mobilna, dokumentacja, zrzuty ekranu, najczęstsze błędy |
+| [github-desktop.md](github-desktop.md) | GitHub Desktop: instalacja, klonowanie zadania, commit, push, pull i typowe problemy (bez wpisywania poleceń) |
 | [git-podstawy.md](git-podstawy.md) | Git i GitHub w pigułce: klonowanie, commit, push, typowe błędy |
 | [snippety/](snippety/README.md) | 45 fragmentów kodu (snippetów) do Visual Studio dla aplikacji konsolowych w C#: instrukcja instalacji, spis skrótów i same pliki `.snippet` |
 
