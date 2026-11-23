@@ -11,6 +11,8 @@ Przygotowane w Mazowieckim Technikum Innowacji z myślą o aplikacjach konsolowy
 | [git-podstawy.md](git-podstawy.md) | Git i GitHub w pigułce: klonowanie, commit, push, typowe błędy |
 | [snippety/](snippety/README.md) | 45 fragmentów kodu (snippetów) do Visual Studio dla aplikacji konsolowych w C#: instrukcja instalacji, spis skrótów i same pliki `.snippet` |
 
+Zaczynasz od zera? Najpierw zajrzyj do przewodnika [csharp-jak-zaczac](https://github.com/Mazowieckie-Technikum-Innowacji/csharp-jak-zaczac): instalacja, pierwszy program, debugowanie.
+
 ## Jak korzystać
 
 - Czytaj bezpośrednio na GitHubie albo pobierz repozytorium (**Code → Download ZIP**).
