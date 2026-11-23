@@ -16,7 +16,7 @@ Przygotowane w Mazowieckim Technikum Innowacji w Płocku.
 ## Ściągi
 
 - **[Metody `string` i `char`](csharp-sciaga-string.html)**: szukanie, wycinanie, dzielenie, wczytywanie i formatowanie.
-- **[Snippety do Visual Studio](snippety/README.html)**: 45 skrótów, które po Tabie wstawiają gotowy kod.
+- **[Snippety do Visual Studio](snippety/)**: 45 skrótów, które po Tabie wstawiają gotowy kod.
 
 ## Egzamin zawodowy INF.04
 
