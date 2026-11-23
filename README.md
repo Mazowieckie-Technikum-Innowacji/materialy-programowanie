@@ -12,6 +12,7 @@ Przygotowane w Mazowieckim Technikum Innowacji z myślą o aplikacjach konsolowy
 | [inf04-lista-kontrolna.md](inf04-lista-kontrolna.md) | lista kontrolna do części praktycznej INF.04: foldery, aplikacja konsolowa i mobilna, dokumentacja, zrzuty ekranu, najczęstsze błędy |
 | [classroom50-dla-uczniow.md](classroom50-dla-uczniow.md) | Classroom 50 dla uczniów: jak przyjąć zadanie, wysłać pracę, zobaczyć wynik oceniania i co robić, gdy coś nie działa |
 | [github-desktop.md](github-desktop.md) | GitHub Desktop: instalacja, klonowanie zadania, commit, push, pull i typowe problemy (bez wpisywania poleceń) |
+| [**Git i GitHub: lekcja krok po kroku**](https://github.com/Mazowieckie-Technikum-Innowacji/git-i-github-lekcja) | pełny kurs (osobne repozytorium): każde polecenie wyjaśnione, ćwiczenia, pytania kontrolne, plan zajęć |
 | [git-podstawy.md](git-podstawy.md) | Git i GitHub w pigułce: klonowanie, commit, push, typowe błędy |
 | [snippety/](snippety/README.md) | 45 fragmentów kodu (snippetów) do Visual Studio dla aplikacji konsolowych w C#: instrukcja instalacji, spis skrótów i same pliki `.snippet` |
 

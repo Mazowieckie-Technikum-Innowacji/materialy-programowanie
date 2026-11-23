@@ -10,6 +10,7 @@ Przygotowane w Mazowieckim Technikum Innowacji w Płocku.
 ## Pierwsze kroki
 
 - **[Jak zacząć z C#](https://github.com/Mazowieckie-Technikum-Innowacji/csharp-jak-zaczac)**: instalacja, pierwszy program, debugowanie, Git.
+- **[Git i GitHub: lekcja krok po kroku](https://github.com/Mazowieckie-Technikum-Innowacji/git-i-github-lekcja)**: pełny kurs z ćwiczeniami, pytaniami kontrolnymi i planem zajęć.
 - **[Classroom 50 dla uczniów](classroom50-dla-uczniow.html)**: jak przyjąć zadanie, wysłać pracę i zobaczyć wynik oceniania.
 - **[GitHub Desktop](github-desktop.html)**: Git klikaniem, bez poleceń: klonowanie zadania, commit, push.
 - **[Git w pigułce](git-podstawy.html)**: klonowanie, commit, push i typowe błędy w terminalu.
